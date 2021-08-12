@@ -1,0 +1,17 @@
+{% extends 'base.html'%}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block head %}
+<h1>Welcome home</h1>
+{% endblock %}
+
+{% block body %}
+<form action="/addlink">
+  <label for="link" method="POST">Link to be tinyed:</label><br>
+  <input type="text" id="link" name="link" value="https://somelinktobetynied"><br>
+  <input type="submit" value="Submit">
+</form>
+{% endblock %}
